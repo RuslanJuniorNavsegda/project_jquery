@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jQuery Gallery</title>
+    <title>Enhanced jQuery Gallery</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <h1>Photo Gallery</h1>
+      <h2 id="imageCount">Отображено изображений: 0</h2>
+
+      <!-- Фильтры -->
       <div class="filter-buttons">
         <button data-filter="all" class="active">Все</button>
         <button data-filter="nature">Природа</button>
         <button data-filter="cities">Города</button>
       </div>
+
+      <!-- Галерея -->
       <div class="gallery">
         <div class="item nature">
           <img src="./img/nature1.jpg" alt="Nature" />
@@ -29,12 +34,15 @@
         </div>
         <div class="item cities"><img src="./img/city3.jpg" alt="City" /></div>
       </div>
-    </div>
 
-    <!-- Модальное окно для увеличенного изображения -->
-    <div id="modal" class="modal">
-      <span id="closeModal">&times;</span>
-      <img id="modalImage" src="" alt="Large Image" />
+      <!-- Кнопка для загрузки новых изображений -->
+      <button id="loadMore">Загрузить ещё</button>
+
+      <!-- Модальное окно -->
+      <div id="modal" class="modal">
+        <span id="closeModal">&times;</span>
+        <img id="modalImage" src="" alt="Large Image" />
+      </div>
     </div>
 
     <script src="script.js"></script>
