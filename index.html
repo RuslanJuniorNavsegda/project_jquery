@@ -12,37 +12,43 @@
       <h1>Photo Gallery</h1>
       <h2 id="imageCount">Отображено изображений: 0</h2>
 
-      <!-- Фильтры -->
+      <input type="text" id="searchInput" placeholder="Поиск по категории..." />
+      <button id="shuffleBtn">Перемешать</button>
+
       <div class="filter-buttons">
         <button data-filter="all" class="active">Все</button>
         <button data-filter="nature">Природа</button>
         <button data-filter="cities">Города</button>
       </div>
 
-      <!-- Галерея -->
       <div class="gallery">
         <div class="item nature">
           <img src="./img/nature1.jpg" alt="Nature" />
+          <button class="delete-btn">Удалить</button>
         </div>
         <div class="item nature">
           <img src="./img/nature2.jpg" alt="Nature" />
+          <button class="delete-btn">Удалить</button>
         </div>
-        <div class="item cities"><img src="./img/city1.jpg" alt="City" /></div>
-        <div class="item cities"><img src="./img/city2.jpg" alt="City" /></div>
+        <div class="item cities">
+          <img src="./img/city1.jpg" alt="City" />
+          <button class="delete-btn">Удалить</button>
+        </div>
+        <div class="item cities">
+          <img src="./img/city2.jpg" alt="City" />
+          <button class="delete-btn">Удалить</button>
+        </div>
         <div class="item nature">
           <img src="./img/nature3.jpg" alt="Nature" />
+          <button class="delete-btn">Удалить</button>
         </div>
-        <div class="item cities"><img src="./img/city3.jpg" alt="City" /></div>
+        <div class="item cities">
+          <img src="./img/city3.jpg" alt="City" />
+          <button class="delete-btn">Удалить</button>
+        </div>
       </div>
 
-      <!-- Кнопка для загрузки новых изображений -->
       <button id="loadMore">Загрузить ещё</button>
-
-      <!-- Модальное окно -->
-      <div id="modal" class="modal">
-        <span id="closeModal">&times;</span>
-        <img id="modalImage" src="" alt="Large Image" />
-      </div>
     </div>
 
     <script src="script.js"></script>
